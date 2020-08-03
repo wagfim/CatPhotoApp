@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding tests</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .default {
+            border: black 5px solid;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+        .yellow-box {
+            background-color: yellow;
+        }
+        .red-box {
+            background-color: red;
+            color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;          
+        }
+        .blue-box {
+            background-color: blue;
+            color: white;
+            margin: 20px auto 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Primeira tentativa:</h3>
+    <div class="default yellow-box">
+        margin
+        <div class="default red-box">
+            padding
+        </div>
+        <div class="default blue-box">
+            padding
+        </div>
+    </div>
+
+
+</body>
+</html>
