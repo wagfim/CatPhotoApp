@@ -6,44 +6,80 @@
     <title>Padding tests</title>
 
     <style>
-        body {
-            font-family: sans-serif;
-        }
         .default {
             border: black 5px solid;
             font-weight: bold;
             text-align: center;
             padding: 10px;
+            font-family: sans-serif;
         }
-        .yellow-box {
+        .amarelo-box {
             background-color: yellow;
         }
-        .red-box {
+        .vermelho-box {
             background-color: red;
             color: white;
             margin-top: 20px;
             margin-bottom: 20px;          
         }
-        .blue-box {
+        .azul-box {
             background-color: blue;
             color: white;
             margin: 20px auto 20px auto;
         }
+
+        .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+  }
     </style>
 </head>
 
 <body>
+
     <h3>Primeira tentativa:</h3>
-    <div class="default yellow-box">
+    <div class="default amarelo-box">
         margin
-        <div class="default red-box">
+        <div class="default vermelho-box">
             padding
         </div>
-        <div class="default blue-box">
+        <div class="default azul-box">
             padding
         </div>
     </div>
 
+    <h3>FreeCodeCamp Exemplo</h3>
+
+    <h5 class="injected-text">margin</h5>
+
+    <div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
 
 </body>
 </html>
