@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinguim feito com css</title>
     <style>
-        .pinguim {
-            /* variaveis de cor */
+        :root {
             --pinguim-tamanho: 300px;
             --pinguim-pele: black;
             --pinguim-barriga: white;
             --pinguim-bico: orange;
-            /********************/
+        }
 
+        /* adequa o pinguim ao tamanho de tela */
+        @media (max-width: 350px) {
+            :root {
+                --pinguim-tamanho: 200px;
+            }
+        }
+
+        .pinguim {
             /* posicionamento */
             position: relative;
             margin: auto;
@@ -21,6 +28,8 @@
             width: var(--pinguim-tamanho, 300px);
             height: var(--pinguim-tamanho, 300px);
         }
+
+        
 
         .pinguim-top {
             top: 10%;
